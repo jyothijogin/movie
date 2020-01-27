@@ -1,0 +1,11 @@
+{
+  "/server": {
+    "target": "http://[::1]:8080",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/server" : ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+
+<div class="card flex-row flex-wrap"  *ngFor="let movie of movies">
+  <div *ngIf="idnum == movie.id">
+  <div class="card-header border-0">
+    <img src={{movie.imageUrl}} alt="Card image cap" width ="400" class="pull-left mr-2">
+  </div>
+  <div class="card-block px-2">
+    <h4 class="card-title">{{movie.title}}</h4>
+    <p class="card-text">year: {{movie.year}} rating: {{movie.rating}}</p>
+    <p class="card-text"></p>
+    <p class="card-text">{{movie.description}}</p>
+    <button (click)="downloadFile(movie.id)" class="btn btn-primary">Download</button>
+  </div>
+</div>
+</div>
+
+

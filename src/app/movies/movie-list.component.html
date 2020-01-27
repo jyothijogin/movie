@@ -1,0 +1,25 @@
+<div class="container">
+  <br>
+  <input class="form-control mr-sm-2"
+         placeholder="Search Movies"
+         type="search"
+         aria-label="Search"
+         [(ngModel)] = "filterText"
+         (keyup)="performFilter()">
+</div>
+<br>
+<div class="container d-flex flex-nowrap">
+<div class="row card-group">
+  <div class="col-md-4"  *ngFor="let movie of filteredMovies">
+    <div class="card">
+      <img class="card-img-top" [src]='movie.imageUrl' alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-text">{{movie.year}} {{movie.genre}}</p>
+        <a routerLink="/movie-list/{{movie.id}}">view more</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
