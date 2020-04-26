@@ -1,4 +1,7 @@
+
+
 # MovieSubUi
+This project is only a front-end application to display the list of Hollywood movies. You can click on the movie icon to view it in detail and you can also download the english subtitle .srt file of that movie. The front-end is developed using Angular Technology and Typescript.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
